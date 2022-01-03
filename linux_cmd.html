@@ -1,0 +1,63 @@
+</body>
+
+<h1>Linux command lines</h1>
+<h2>Basic</h2>
+<li><a href="/ls.html">ls</a> --- List down the files and sub-directories within your current directory</li>
+<li>cd --- Change Directory -- Change the current working directory #Hint: when you enter 'Desktop', only enter 'Des' then click 'TAB'botton, it will fill up the directory.</li>
+<li>pwd --- print work directory</li>
+<li>clear --- Clear everything in the window</li>
+'''
+https://blog.csdn.net/ancientear/article/details/81054986
+https://www.javatpoint.com/linux-tutorial
+'''
+
+<hr />
+
+<h2>SSH</h2>
+
+<h2>GIT PUSH</h2>
+<h3>Git global setup</h3>
+<li>git config --global user.name "Ye Tao"</li>
+<li>git config --global user.email "yt222ar@student.lnu.se"</li>
+<h3>Create a new repository</h3>
+<li>git clone git@gitlab.lnu.se:1dv501/student/yt222ar/assignment-03.git</li>
+<li>cd assignment-03</li>
+<li>git switch -c main</li>
+<li>touch README.md</li>
+<li>git add README.md</li>
+<li>git commit -m "add README"</li>
+<li>git push -u origin main</li>
+
+<h3>Push an existing folder</h3>
+<li>cd existing_folder</li>
+<li>git init --initial-branch=main</li>
+<li>git remote add origin git@gitlab.lnu.se:1dv501/student/yt222ar/assignment-03.git</li>
+<li>git add .</li>
+<li>git commit -m "Initial commit"</li>
+<li>git push -u origin main</li>
+
+<h3>Push an existing Git repository</h3>
+<li>cd existing_repo</li>
+<li>git remote rename origin old-origin</li>
+<li>git remote add origin git@gitlab.lnu.se:1dv501/student/yt222ar/assignment-03.git</li>
+<li>git push -u origin --all</li>
+<li>git push -u origin --tags</li>
+
+<h2>Other</h2>
+<li>cd .shh</li>
+<li>chmod u+xr,go-rwx ~/.ssh --- if "Permission denied" on a directory... # <a href="https://unix.stackexchange.com/questions/146193/bash-cd-ssh-permission-denied">-bash: cd: .ssh/: Permission denied</a></li>
+<li>git rm XXX.XXX</li>
+<li>git commit -m "xxxxxx"</li>
+<li>git push</li>
+<li>git push -u origin main -f</li>
+<li>git status</li>
+
+</body>
+
+<br />
+
+<body>
+
+    <a href="/index.html">Home</a>
+  
+</body>
