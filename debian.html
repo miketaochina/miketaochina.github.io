@@ -1,0 +1,122 @@
+<!--这是一段注释。注释不会在浏览器中显示。-->
+<body>
+    <h1>Hello, Debian!</h1>
+
+    <h2>Command</h2>
+    <h3>Reboot</h3>
+        <p>
+            <ul>
+                <li>shutdown -r now ----------------------------# reboot now</li>
+                <li>shutdown -r 10 ------------------------------# reboot in 10 minutes</li>
+                <li>shutdown -r 20:35 --------------------------# reboot at 20:35</li>
+                <li></li>
+            </ul>
+        </p> 
+        <p>Entering <q>shutdown -c</q> to to cancel the reboot when using shutdown command to reboot.</p>
+    <h3>Poweroff</h3>
+        <p>
+            <ul>
+                <li>halt --------------------------------------------# poweroff now(use<q>-p</q> to turn off the power)</li>
+                <li>poweroff -------------------------------------# poweroff now</li>
+                <li>shutdown -h now ---------------------------# poweroff now</li>
+                <li>shutdown -h 10 -----------------------------# poweroff in 10 minutes</li>
+                <li></li>
+            </ul>
+        </p>
+        <p>Entering <q>shutdown -c</q> to to cancel the poweroff when using shutdown command to power off.</p>
+
+        <h3>System</h3>
+        <p>
+            <ul>
+                <li>uptime --------------------------------------------# </li>
+                <li> apt-get install <<package name>>=<<version>> -----------# 安装指定指定版本: apt-get -y install nginx=1.14.2-1~xenial</li>
+                <li>ip addr ---------------# Check IP address.</li>
+                <li>ip a ---------------# Check IP address.</li>
+                <li>ip address show ---------------# Check IP address.</li>
+                <li>ip -br -c a ---------------# Check IP address.</li>
+                <li>telnet xxx.xxx.xxx.xxx 22 ---------# Check port number</li>
+                <li>route -n -----------------# Show route information</li>
+                <li>ls --color ---------------# Show color in terminal</li>
+                <li>vi ~/.bashrc ------------------# 如何让debian终端显示颜色?</li>
+                <li>pmset -g batt ---------------# Check battery status</li>
+            </ul>
+        </p>
+
+    <h3>TD</h3>
+        <p>
+            <ul>
+                <li>touch name.format -------------------------# To create a new file.</li>
+                <li>cat name.format ----------------------------# To preview the contents.</li>
+                <li>apt list --installed --------------------------# 这个会显示使用 apt 命令安装的所有的软件包。同时也会包含由于依赖而被安装的软件包。也就是说不仅会包含你曾经安装的程序，而且会包含大量库文件和间接安装的软件包。</li>
+                <li>apt list --installed | grep program_name ------# 可以检索出使用 .deb 软件包文件安装的软件。由于列出出来的已安装的软件包太多，用 grep 过滤特定的软件包是一个比较好的办法。</li>
+                <li>dpkg-query -l --------------------------# </li>
+                <li>修改sshd_config文件，命令为: vi /etc/ssh/sshd_config</li>
+                <li>启动SSH服务，命令为: /etc/init.d/ssh start // 或者service ssh start</li>
+                <li>验证SSH服务状态，命令为: /etc/init.d/ssh status</li>
+                <li>添加开机自启动 update-rc.d ssh enable</li>
+                <li>cat >> /etc/ssh/sshd_config << EOF
+                    PasswordAuthentication yes
+                    PermitRootLogin yes
+                    EOF
+                    service ssh restart</li>
+                <li>/etc/init.d/ssh status</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </p>
+    <h3>Other</h3>
+        <p>
+            <ul>
+                <li><a href="https://blog.csdn.net/a921122/article/details/22965429/">Ubuntu解决 E: Unable to locate package</a></li>
+                <li><a herf="https://tieba.baidu.com/p/7636521958">浏览器卡死。</a></li>
+                <li><a herf="https://tieba.baidu.com/p/7312735854#139697452964l">今天头1次用debian，头一次10.8，太难用了，详见内</a></li>
+                <li><a herf="https://www.zhzz.org/asp/2129">debian10开启ssh远程登录</a></li>
+                <li><a herf="https://blog.51cto.com/u_437549/4331925">Debian10开启SSH服务</a></li>
+                <li><a herf="https://www.cnblogs.com/kimkat/p/15229386.html">如何让debian终端显示颜色?</a></li>
+                <li></li>
+            </ul>
+        </p>
+
+    <h2>Installation</h2>
+        <p>
+            <ul>
+                <li>speedtest</li>
+                <li>neofetch</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </p>
+    
+        <h2>Installation TD</h2>
+        <p>
+            <ul>
+                <li>net-tools</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </p>
+
+
+
+
+
+
+
+</body>
+
+<br />
+
+<body>
+
+    <a href="/index.html">Home</a>
+  
+</body>
