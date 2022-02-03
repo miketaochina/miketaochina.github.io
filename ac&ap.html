@@ -1,10 +1,286 @@
 <body>
     <h1>Hello, AC+AP!</h1>
     <h3></h3><ul><li>Based on multi-nodes, a larger area wireless coverage is achieved.</li></ul></h3>
+        <p>As the growing demand for Wi-Fi access, more and more wireless access points (APs) are deployed in the network to ensure the signal coverage in the enterprise buildings or campuses, which makes the network O&M harder for administrators. Wireless access controllers (ACs) come into being to settle this bottleneck by controlling and managing these multiple APs. The wireless access point has lost the individual intelligence, while the wireless access controller becomes the new "brain" for the entire WLAN. --- <a href="https://community.fs.com/blog/wireless-lan-controller-explained.html">Wireless LAN Controller Explained and FAQs</a></p>
     <h2>What is AC?</h2>
-        <p></p>
+        <p>A WLAN controller manages wireless network access points that allow wireless devices to connect to the network. --- <a href="https://www.cisco.com/c/en/us/products/wireless/wireless-lan-controller/what-is-wlan-controller.html">What Is a WLAN Controller?</a></p>
+        <P>AC is <q>Access Controller</q> which controls AP(Access Point.)</P>
+        
+    <h2>What is AP?</h2>
+        <p>What a wireless AP <q>access point</q> does for your network is similar to what an amplifier does for your home stereo. It takes the bandwidth coming from a router and stretches it so that many devices can go on the network from farther distances away. --- <a href="https://www.cisco.com/c/en/us/products/wireless/wireless-lan-controller/what-is-wlan-controller.html">What Is a WLAN Controller?</a></p>
+        <p>A wireless access point (WAP) is a networking device that allows wireless-capable devices to connect to a wired network. It is simpler and easier to install WAPs to connect all the computers or devices in your network than to use wires and cables. --- <a href="https://www.cisco.com/c/en_uk/solutions/small-business/resource-center/networking/what-is-access-point.html">What Is an Access Point?</a></p>
+        <p>In computer networking, a wireless access point (WAP), or more generally just access point (AP), is a networking hardware device that allows other Wi-Fi devices to connect to a wired network. As a standalone device, the AP may have a wired connection to a router, but, in a wireless router, it can also be an integral component of the router itself. An AP is differentiated from a hotspot which is a physical location where Wi-Fi access is available. --- <a href="https://en.wikipedia.org/wiki/Wireless_access_point">Wireless access point</a></p>
+        <p>AP is <q>Access Point</q> which is a WIFI signal amplifier.</p>
+        <p>
+            <ol>
+                <li>Without router function</li>
+                <li>Without DHCP</li>
+                <li>Without NAT</li>
+            </ol>
+        </p>
+        <p>Therefore, the AP needs the AC to have and provide such functions, so the AC is essentially a router. Just on the basis of the router, there is one more function that can manage and schedule APs.</p>
+    <h2>what does the AC need to schedule?</h2>
+        <p>
+            <ul>
+                <li>AC can control the signal transmission and reception power of multiple APs.</li>
+                <li>AC tells the AP how the network topology at home.</li>
+                <li>AC tells where data is backhauled back faster, it can be wireless backhaul or wired backhaul.</li>
+                <li>AC+AP is actually very similar to Mesh.</li>
+            </ul>
+        </p>
+    <h2>FIT AP and FAT AP</h2>
+    <h3>FIT AP</h3>
+        <p>FIT AP is <q>thin AP</q> which cannot be configured by itself. It needs a special device AC <q>wireless controller</q> for centralized control and management configuration. The body only performs operations such as amplifying, forwarding, and de-interference of wireless signals. The direction of the route has nothing to do with it, it is completed by the upper-layer device.</p>
+        <p>Router + AC <q>Wireless Access Controller</q> + POE power supply + thin AP, such a classic structure is generally used for wireless network coverage, because when the number of APs is large, only the controller is used to manage the configuration, which will simplify a lot of workload. The previous mesh technology actually absorbs the centralized management method of AC.</p>
+    <h3>FAT AP</h3>
+        <p>Fat AP, some people call it a wireless router. Unlike thin APs, wireless routers generally have two interfaces(port), WAN and LAN, in addition to the wireless access function, support address translation (NAT) function, and support DHCP server, DNS and MAC address cloning, as well as VPN access and firewall security features.</p>
+        <p>Most of the APs in the market now have two forms for both FIT and FAT, which are commonly known as fat and thin all-in-one machines. However, in FAT mode, it is limited by its own CPU and memory, the overall capacity and stability is slightly weaker than its FIT mode, unlike the ability of FIT to be relatively limited by AC, but the wireless coverage capability of FAT AP is complete and innate.</p>
+        <p><a href="https://zhuanlan.zhihu.com/p/409930258">Mesh？AC+AP？到底怎么选？（家庭无线组网中小户型篇）</a></p>
 
+    <h2>Criteria</h2>
+    <h3>802.11x = Wi-Fi x</h3>
+        <p>
+            <ul>
+                <li>802.11a (Wi-Fi 1)</li>
+                <li>802.11b (Wi-Fi 2)</li>
+                <li>802.11g (Wi-Fi 3)</li>
+                <li>802.11n (Wi-Fi 4)</li>
+                <li>802.11ac (Wi-Fi 5)</li>
+                <li>802.11ax (Wi-Fi 6)</li>
+            </ul>
+        </p>
+    <h3>The maximum wireless rate supported by the devices</h3>
+        <p>Each device has a supported maximum wireless rate. For the maximum wireless rate supported by common device, please refer to the following table: --- <a href="https://smb.tp-link.com.cn/service/detail_article_4751.html">AP无线测速慢的解决方法</a></p>
+        <div align="center">
+            <table class="MsoNormalTable ke-zeroborder" border="0" cellspacing="0" cellpadding="0" width="528" style="width:396.0pt;border-collapse:collapse;">
+                <tbody>
+                    <tr style="height:26.4pt;">
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span style="font-size:11.0pt;font-family:宋体;color:black;">无线协议</span> 
+                            </p>
+                        </td>
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span style="font-size:11.0pt;font-family:宋体;color:black;">工作频段</span> 
+                            </p>
+                        </td>
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span style="font-size:11.0pt;font-family:宋体;color:black;">通道数</span> 
+                            </p>
+                        </td>
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span style="font-size:11.0pt;font-family:宋体;color:black;">频段带宽</span> 
+                            </p>
+                        </td>
+                        <td width="155" style="width:116.0pt;border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span style="font-size:11.0pt;font-family:宋体;color:black;">理论速度（</span><span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">Mbps</span><span style="font-size:11.0pt;font-family:宋体;color:black;">）</span> 
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height:26.4pt;">
+                        <td width="93" nowrap="nowrap" rowspan="2" style="width:70.0pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">802.11n</span> 
+                            </p>
+                        </td>
+                        <td width="93" nowrap="nowrap" rowspan="2" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">2.4G</span> 
+                            </p>
+                        </td>
+                        <td width="93" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">1×1 MIMO</span> 
+                            </p>
+                        </td>
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">20MHz</span> 
+                            </p>
+                        </td>
+                        <td width="155" nowrap="nowrap" style="width:116.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">72</span> 
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height:26.4pt;">
+                        <td width="93" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">2×2 MIMO</span> 
+                            </p>
+                        </td>
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">20MHz</span> 
+                            </p>
+                        </td>
+                        <td width="155" nowrap="nowrap" style="width:116.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">144</span> 
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height:26.4pt;">
+                        <td width="93" rowspan="2" style="width:70.0pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">802.11ac</span><span style="font-size:11.0pt;font-family:宋体;color:black;">（</span><span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">Wi-Fi5</span><span style="font-size:11.0pt;font-family:宋体;color:black;">）</span> 
+                            </p>
+                        </td>
+                        <td width="93" nowrap="nowrap" rowspan="2" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">5G</span> 
+                            </p>
+                        </td>
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">1×1 MIMO</span> 
+                            </p>
+                        </td>
+                        <td width="93" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">80MHz</span> 
+                            </p>
+                        </td>
+                        <td width="155" nowrap="nowrap" style="width:116.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">433</span> 
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height:26.4pt;">
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">2×2 MIMO</span> 
+                            </p>
+                        </td>
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">80MHz</span> 
+                            </p>
+                        </td>
+                        <td width="155" nowrap="nowrap" style="width:116.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">866</span> 
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height:26.4pt;">
+                        <td width="93" rowspan="6" style="width:70.0pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">802.11ax</span><span style="font-size:11.0pt;font-family:宋体;color:black;">（</span><span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">Wi-Fi6</span><span style="font-size:11.0pt;font-family:宋体;color:black;">）</span> 
+                            </p>
+                        </td>
+                        <td width="93" nowrap="nowrap" rowspan="2" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">2.4G</span> 
+                            </p>
+                        </td>
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">2×2 MIMO</span> 
+                            </p>
+                        </td>
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">40MHz</span> 
+                            </p>
+                        </td>
+                        <td width="155" nowrap="nowrap" style="width:116.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">574</span> 
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height:26.4pt;">
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">4×4 MIMO</span> 
+                            </p>
+                        </td>
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">40MHz</span> 
+                            </p>
+                        </td>
+                        <td width="155" nowrap="nowrap" style="width:116.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">1148</span> 
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height:26.4pt;">
+                        <td width="93" nowrap="nowrap" rowspan="4" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">5G</span> 
+                            </p>
+                        </td>
+                        <td width="93" rowspan="2" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">2×2 MIMO</span> 
+                            </p>
+                        </td>
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">80MHz</span> 
+                            </p>
+                        </td>
+                        <td width="155" nowrap="nowrap" style="width:116.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">1200</span> 
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height:26.4pt;">
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">160MHz</span> 
+                            </p>
+                        </td>
+                        <td width="155" nowrap="nowrap" style="width:116.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">2400</span> 
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height:26.4pt;">
+                        <td width="93" nowrap="nowrap" rowspan="2" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">4×4 MIMO</span> 
+                            </p>
+                        </td>
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">80MHz</span> 
+                            </p>
+                        </td>
+                        <td width="155" nowrap="nowrap" style="width:116.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">2400</span> 
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="height:26.4pt;">
+                        <td width="93" nowrap="nowrap" style="width:70.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">160MHz</span> 
+                            </p>
+                        </td>
+                        <td width="155" nowrap="nowrap" style="width:116.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26.4pt;">
+                            <p class="MsoNormal" align="center" style="text-align:center;">
+                                <span lang="EN-US" style="font-size:11.0pt;font-family:" arial",sans-serif;color:black;"="">4800</span> 
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
+        
 
 
 
