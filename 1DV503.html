@@ -48,6 +48,7 @@
 
 <body>
     <h1><a href="https://mymoodle.lnu.se/pluginfile.php/6857029/mod_resource/content/2/intro.pdf">Lecture1: Course Introduction</a></h1>
+        <h4><a href="https://miketao.oss-cn-shanghai.aliyuncs.com/Lecture_Sides/1DV503/Lecture1_Course_Introduction.pdf">Lecture1: Course Introduction</a><h4>
     <h2>Two Courses</h2>
         <p>
             <ul>
@@ -124,6 +125,7 @@
 
 <body>
     <h1><a href="https://mymoodle.lnu.se/pluginfile.php/6857031/mod_resource/content/1/intro%20db%20theory.pdf">Lecture2 Database Theory Introduction</a></h1>
+    <h4><a href="https://miketao.oss-cn-shanghai.aliyuncs.com/Lecture_Sides/1DV503/Lecture2_Database_Theory_Introduction.pdf">Lecture2 Database Theory Introduction</a><h4>
     <h2>DBMS - Introduction</h2>
         <p>
             <ul>
@@ -169,8 +171,76 @@
                                 </ul></ul>
             </ul>
         </p>
-<h2>Early DBMS</h2>
-
+    <h2>Early DBMS</h2>
+        <p>
+            <ul>
+                <li>Old DBMSs: IMS (hierarchy-based) or CODASYL (graph-based)</li>
+                <li>Example: Airline Reservation Systems
+                    <ul>
+                        <li>Data
+                            <ul>
+                                <li>Reservations (flight no, seat, meal preference, ...)</li>
+                                <li>Flights (departure, destination, departure/arrival times, etc.)</li>
+                                <li>Prices</li>
+                            </ul>
+                        <li>Queries</li>
+                            <ul>
+                                <li>Flights on a given date, time, city, seats available, prices</li>
+                            </ul>
+                        <li>Modifications</li>
+                            <ul><li>Booking a flight, assigning a seat, ...</li></ul>
+                        <li>Requirements
+                            <ul>
+                                <li>Concurrent access by many agents (make sure that no two agents assign the same seat
+                                    simultaneously)</li>
+                                <li>Avoid loss in case of a sudden system failure</li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+    <h2>Relational Databases</h2>
+        <p>
+            <ul>
+                <li>Based on the relational model
+                    <ul>
+                        <li>[E.F. Codd. A relational model for large shared data banks. Comm. ACM, 13:6,
+                        pp. 377-387, 1971]</li>
+                    </ul>
+                </li>
+                <li>Data is organized as tables, called relations
+                    <ul>
+                        <li>Columns: attributes</li>
+                        <li>Rows: tuples</li>
+                        <li><img src="https://miketao.oss-cn-shanghai.aliyuncs.com/HTML/Other/Data%20is%20organized%20as%20tables%2C%20called%20relations.png" width="60%" height="30%" alt="Data is organized as tables, called relations"/></li>
+                    </ul>
+                </li>
+                <li>Separates the logical view from the physical view (storage structure) of the data</li>
+            </ul>
+        </p>
+    <h2>Relational Databases</h2>
+        <p>
+            <ul>
+                <li>Querying a Database
+                    <ul>
+                        <li>Find all students who have taken DA2032 in Fall 2007</li>
+                        <li>Structured Query Language ─ SQL
+                            <ul>
+                                <li>SELECT student</li>
+                                <li>FROM Enrollment</li>
+                                <li>WHERE course = ‘DA2032’ AND semester = ‘Fall 2007’</li>
+                                <li>Answer: Sjöberg, Arlefur, Roos, ...</li>
+                            </ul>
+                        </li>
+                        <li>So-called Query Processor figures out how to answer the query efficiently!</li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+    <h2>DB in real world</h2>
+        <p>To Be Continued</p>
 
 
 
